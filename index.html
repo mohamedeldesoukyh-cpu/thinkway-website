@@ -6,466 +6,524 @@
   <title>Thinkway — Influence. Presence. Impact.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ─── NAVIGATION ─────────────────────────────────────────── -->
+  <!-- grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ─── NAVIGATION ────────────────────────────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a href="#hero" class="nav__logo">Thinkway</a>
-      <nav class="nav__links">
+      <nav class="nav__links" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Work</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a href="#contact" class="btn btn--outline nav__cta">Let's Talk</a>
-      <button class="nav__burger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+      <a href="#contact" class="nav__cta btn-pill">Let's Talk
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
       </button>
     </div>
-    <div class="nav__mobile">
+    <div class="nav__mobile" aria-hidden="true">
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#portfolio">Work</a>
       <a href="#contact">Contact</a>
-      <a href="#contact" class="btn btn--outline">Let's Talk</a>
+      <a href="#contact" class="btn-pill">Let's Talk</a>
     </div>
   </header>
 
-  <!-- ─── HERO ──────────────────────────────────────────────── -->
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
   <section class="hero" id="hero">
-    <div class="hero__bg">
-      <div class="hero__grain"></div>
-      <div class="hero__orb hero__orb--1"></div>
-      <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__mesh" aria-hidden="true">
+      <div class="hero__orb hero__orb--a"></div>
+      <div class="hero__orb hero__orb--b"></div>
+      <div class="hero__orb hero__orb--c"></div>
     </div>
-    <div class="container hero__inner">
-      <div class="hero__tag reveal">Creative Agency</div>
-      <h1 class="hero__headline reveal reveal--delay-1">
-        We build brands<br />
-        that <span class="text-gradient">move culture.</span>
+
+    <div class="hero__watermark" aria-hidden="true">THINKWAY</div>
+
+    <div class="container hero__body">
+      <div class="hero__eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span>Creative Agency · Est. 2018</span>
+      </div>
+
+      <h1 class="hero__headline" data-split>
+        We build brands<br>
+        that <em>move</em> culture.
       </h1>
-      <p class="hero__sub reveal reveal--delay-2">
-        Thinkway crafts influencer campaigns, out-of-home experiences,<br class="br-hide" />
-        and original content that leave lasting impressions.
-      </p>
-      <div class="hero__actions reveal reveal--delay-3">
-        <a href="#portfolio" class="btn btn--primary">View Our Work</a>
-        <a href="#about" class="btn btn--ghost">
-          <span>Discover More</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+
+      <div class="hero__foot">
+        <p class="hero__sub">
+          Thinkway is a full-service agency specialising in influencer
+          marketing, social out-of-home, and content production that
+          connects brands to the moments that matter.
+        </p>
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn-primary magnetic">
+            <span>View Our Work</span>
+          </a>
+          <a href="#about" class="btn-text">
+            About Us
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="hero__scroll-hint reveal reveal--delay-4">
-      <div class="hero__scroll-line"></div>
+
+    <div class="hero__stats">
+      <div class="container hero__stats-inner">
+        <div class="hero__stat">
+          <span class="hero__stat-n" data-count="200">0</span><span class="hero__stat-suf">+</span>
+          <p>Campaigns</p>
+        </div>
+        <div class="hero__stat-rule"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-n" data-count="85">0</span><span class="hero__stat-suf">M+</span>
+          <p>Total Reach</p>
+        </div>
+        <div class="hero__stat-rule"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-n" data-count="50">0</span><span class="hero__stat-suf">+</span>
+          <p>Brand Partners</p>
+        </div>
+        <div class="hero__stat-rule"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-n" data-count="8">0</span><span class="hero__stat-suf">yrs</span>
+          <p>In the Industry</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-track"><div class="hero__scroll-thumb"></div></div>
       <span>Scroll</span>
-    </div>
-    <div class="hero__stats reveal reveal--delay-3">
-      <div class="hero__stat">
-        <span class="hero__stat-num" data-count="200">0</span><span>+</span>
-        <p>Campaigns Delivered</p>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num" data-count="85">0</span><span>M+</span>
-        <p>Total Reach</p>
-      </div>
-      <div class="hero__stat">
-        <span class="hero__stat-num" data-count="50">0</span><span>+</span>
-        <p>Brand Partners</p>
-      </div>
     </div>
   </section>
 
-  <!-- ─── MARQUEE ───────────────────────────────────────────── -->
+  <!-- ─── MARQUEE ──────────────────────────────────────────── -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee__track">
-      <span>Influencer Marketing</span><span class="dot">·</span>
-      <span>SOOH Campaigns</span><span class="dot">·</span>
-      <span>Content Production</span><span class="dot">·</span>
-      <span>Brand Strategy</span><span class="dot">·</span>
-      <span>Creative Direction</span><span class="dot">·</span>
-      <span>Influencer Marketing</span><span class="dot">·</span>
-      <span>SOOH Campaigns</span><span class="dot">·</span>
-      <span>Content Production</span><span class="dot">·</span>
-      <span>Brand Strategy</span><span class="dot">·</span>
-      <span>Creative Direction</span><span class="dot">·</span>
-      <span>Influencer Marketing</span><span class="dot">·</span>
-      <span>SOOH Campaigns</span><span class="dot">·</span>
-      <span>Content Production</span><span class="dot">·</span>
-      <span>Brand Strategy</span><span class="dot">·</span>
-      <span>Creative Direction</span><span class="dot">·</span>
+      <span>Influencer Marketing</span><i>✦</i>
+      <span>Social Out of Home</span><i>✦</i>
+      <span>Content Production</span><i>✦</i>
+      <span>Brand Strategy</span><i>✦</i>
+      <span>Creative Direction</span><i>✦</i>
+      <span>Campaign Management</span><i>✦</i>
+      <span>Influencer Marketing</span><i>✦</i>
+      <span>Social Out of Home</span><i>✦</i>
+      <span>Content Production</span><i>✦</i>
+      <span>Brand Strategy</span><i>✦</i>
+      <span>Creative Direction</span><i>✦</i>
+      <span>Campaign Management</span><i>✦</i>
     </div>
   </div>
 
-  <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+  <!-- ─── ABOUT ────────────────────────────────────────────── -->
   <section class="about" id="about">
     <div class="container about__inner">
       <div class="about__left">
-        <div class="section-tag reveal">About Us</div>
-        <h2 class="section-title reveal reveal--delay-1">
-          Strategy-first.<br />Culture-driven.
+        <div class="eyebrow reveal">About Us</div>
+        <h2 class="about__title reveal reveal--d1" data-split>
+          Strategy-first.<br><em>Culture-driven.</em>
         </h2>
-        <p class="about__body reveal reveal--delay-2">
-          Thinkway is an independent creative agency specialising in the intersection of
-          media, culture, and commerce. We partner with ambitious brands to design campaigns
-          that don't just reach audiences — they resonate with them.
+        <p class="about__body reveal reveal--d2">
+          Thinkway is an independent creative agency at the intersection of
+          media, culture, and commerce. We partner with ambitious brands to
+          build campaigns that don't just reach audiences — they resonate.
         </p>
-        <p class="about__body reveal reveal--delay-2">
-          From identifying the right voices to placing your message in the physical spaces
-          where your audience lives, we connect every touchpoint into one coherent story.
+        <p class="about__body reveal reveal--d2">
+          From identifying the right voices to placing your message in the
+          physical spaces where culture lives, we turn every touchpoint into
+          one coherent, memorable story.
         </p>
-        <a href="#contact" class="btn btn--primary reveal reveal--delay-3">Work With Us</a>
+        <a href="#contact" class="btn-primary magnetic reveal reveal--d3"><span>Work With Us</span></a>
       </div>
-      <div class="about__right reveal reveal--delay-2">
-        <div class="about__visual">
-          <div class="about__card about__card--1">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="var(--accent)" stroke-width="1.5"/><path d="M10 16l4 4 8-8" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <p>End-to-end campaign management</p>
+      <div class="about__right reveal reveal--d2">
+        <div class="about__number" aria-hidden="true">8+</div>
+        <div class="about__pills">
+          <div class="about__pill">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9l4 4 8-8" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            End-to-end campaign management
           </div>
-          <div class="about__card about__card--2">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="var(--accent)" stroke-width="1.5"/><path d="M16 10v6l4 2" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <p>Real-time performance analytics</p>
+          <div class="about__pill">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 3v5l3 2" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Real-time performance analytics
           </div>
-          <div class="about__card about__card--3">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="15" stroke="var(--accent)" stroke-width="1.5"/><path d="M11 16c0-2.76 2.24-5 5-5s5 2.24 5 5-2.24 5-5 5" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/></svg>
-            <p>Global influencer network</p>
+          <div class="about__pill">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="3" stroke="var(--accent)" stroke-width="1.5"/><path d="M9 1v2M9 15v2M1 9h2M15 9h2" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Global influencer network
           </div>
-          <div class="about__bg-shape"></div>
+          <div class="about__pill">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="5" width="14" height="10" rx="1.5" stroke="var(--accent)" stroke-width="1.5"/><path d="M6 5V3.5a3 3 0 0 1 6 0V5" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            In-house creative production
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── SERVICES ──────────────────────────────────────────── -->
+  <!-- ─── SERVICES ─────────────────────────────────────────── -->
   <section class="services" id="services">
     <div class="container">
-      <div class="section-header">
-        <div class="section-tag reveal">What We Do</div>
-        <h2 class="section-title reveal reveal--delay-1">Our Services</h2>
-        <p class="section-sub reveal reveal--delay-2">
-          Three core disciplines. One unified vision.
-        </p>
+      <div class="services__header">
+        <div class="eyebrow reveal">What We Do</div>
+        <h2 class="services__title reveal reveal--d1" data-split>
+          Three disciplines.<br>One vision.
+        </h2>
       </div>
-      <div class="services__grid">
 
-        <div class="service-card reveal">
-          <div class="service-card__num">01</div>
-          <div class="service-card__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <circle cx="18" cy="18" r="8" stroke="var(--accent)" stroke-width="1.5"/>
-              <circle cx="34" cy="14" r="5" stroke="var(--accent)" stroke-width="1.5"/>
-              <circle cx="34" cy="34" r="5" stroke="var(--accent)" stroke-width="1.5"/>
-              <path d="M25.5 21l4 9M25.5 15l5-2" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+      <div class="svc-list">
+
+        <div class="svc-item reveal" data-svc>
+          <button class="svc-item__head" aria-expanded="false">
+            <span class="svc-item__num">01</span>
+            <span class="svc-item__name">Influencer Marketing</span>
+            <span class="svc-item__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="svc-item__body">
+            <div class="svc-item__body-inner">
+              <div class="svc-item__content">
+                <p class="svc-item__desc">
+                  We connect brands with the right creators — from mega-influencers to
+                  hyper-targeted micro communities — crafting authentic partnerships that
+                  drive real engagement and measurable ROI.
+                </p>
+                <ul class="svc-item__list">
+                  <li>Creator identification &amp; vetting</li>
+                  <li>Brief &amp; creative strategy</li>
+                  <li>Campaign execution &amp; management</li>
+                  <li>Performance reporting &amp; optimisation</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <h3 class="service-card__title">Influencer Marketing</h3>
-          <p class="service-card__body">
-            We connect brands with the right creators — from mega-influencers to micro communities —
-            crafting authentic partnerships that drive real engagement and measurable ROI.
-          </p>
-          <ul class="service-card__list">
-            <li>Creator identification &amp; vetting</li>
-            <li>Brief &amp; creative strategy</li>
-            <li>Campaign execution &amp; management</li>
-            <li>Performance reporting</li>
-          </ul>
-          <div class="service-card__hover-line"></div>
         </div>
 
-        <div class="service-card reveal reveal--delay-1">
-          <div class="service-card__num">02</div>
-          <div class="service-card__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <rect x="6" y="10" width="36" height="28" rx="2" stroke="var(--accent)" stroke-width="1.5"/>
-              <path d="M6 18h36" stroke="var(--accent)" stroke-width="1.5"/>
-              <rect x="12" y="24" width="10" height="8" rx="1" stroke="var(--accent)" stroke-width="1.5"/>
-              <path d="M28 24h8M28 29h5" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+        <div class="svc-item reveal reveal--d1" data-svc>
+          <button class="svc-item__head" aria-expanded="false">
+            <span class="svc-item__num">02</span>
+            <span class="svc-item__name">Social Out of Home</span>
+            <span class="svc-item__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="svc-item__body">
+            <div class="svc-item__body-inner">
+              <div class="svc-item__content">
+                <p class="svc-item__desc">
+                  We bridge digital and physical worlds — placing brand stories in high-impact
+                  outdoor environments that amplify your social presence and stop people
+                  in their tracks.
+                </p>
+                <ul class="svc-item__list">
+                  <li>Location strategy &amp; media buying</li>
+                  <li>Digital billboard &amp; DOOH placements</li>
+                  <li>Social-first OOH creative</li>
+                  <li>Cross-channel integration</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <h3 class="service-card__title">Social Out of Home</h3>
-          <p class="service-card__body">
-            We bridge the digital and physical worlds — placing brand stories in high-impact
-            outdoor environments that amplify your social presence and stop people in their tracks.
-          </p>
-          <ul class="service-card__list">
-            <li>Location strategy &amp; media buying</li>
-            <li>Digital billboard &amp; DOOH placements</li>
-            <li>Social-first OOH creative</li>
-            <li>Cross-channel integration</li>
-          </ul>
-          <div class="service-card__hover-line"></div>
         </div>
 
-        <div class="service-card reveal reveal--delay-2">
-          <div class="service-card__num">03</div>
-          <div class="service-card__icon">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <rect x="8" y="12" width="32" height="22" rx="2" stroke="var(--accent)" stroke-width="1.5"/>
-              <path d="M20 34v4M28 34v4M16 38h16" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M22 21l-4 2.5 4 2.5V21z" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/>
-              <path d="M30 23.5h-8" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+        <div class="svc-item reveal reveal--d2" data-svc>
+          <button class="svc-item__head" aria-expanded="false">
+            <span class="svc-item__num">03</span>
+            <span class="svc-item__name">Content Production</span>
+            <span class="svc-item__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="svc-item__body">
+            <div class="svc-item__body-inner">
+              <div class="svc-item__content">
+                <p class="svc-item__desc">
+                  From concept to final cut, our in-house creative team produces scroll-stopping
+                  video, photography, and social content built to perform on every platform
+                  and in every format.
+                </p>
+                <ul class="svc-item__list">
+                  <li>Video production &amp; post-production</li>
+                  <li>Photography &amp; art direction</li>
+                  <li>Platform-native social content</li>
+                  <li>Motion graphics &amp; animation</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <h3 class="service-card__title">Content Production</h3>
-          <p class="service-card__body">
-            From concept to final cut, our in-house creative team produces scroll-stopping video,
-            photography, and social content that is built to perform across every platform.
-          </p>
-          <ul class="service-card__list">
-            <li>Video production &amp; post</li>
-            <li>Photography &amp; art direction</li>
-            <li>Platform-native social content</li>
-            <li>Motion graphics &amp; animation</li>
-          </ul>
-          <div class="service-card__hover-line"></div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ─── PROCESS ───────────────────────────────────────────── -->
+  <!-- ─── PROCESS ──────────────────────────────────────────── -->
   <section class="process">
     <div class="container">
-      <div class="section-header">
-        <div class="section-tag reveal">How We Work</div>
-        <h2 class="section-title reveal reveal--delay-1">Our Process</h2>
+      <div class="process__header">
+        <div class="eyebrow reveal">How We Work</div>
+        <h2 class="process__title reveal reveal--d1">Our Process</h2>
       </div>
-      <div class="process__steps">
-        <div class="process__step reveal">
-          <div class="process__step-num">01</div>
-          <div class="process__step-content">
-            <h4>Discover</h4>
-            <p>Deep dive into your brand, audience, and objectives.</p>
-          </div>
+      <div class="process__grid">
+        <div class="process__item reveal">
+          <div class="process__item-num">01</div>
+          <h4>Discover</h4>
+          <p>Deep dive into your brand, audience, and objectives to build a shared foundation.</p>
         </div>
-        <div class="process__connector"></div>
-        <div class="process__step reveal reveal--delay-1">
-          <div class="process__step-num">02</div>
-          <div class="process__step-content">
-            <h4>Strategise</h4>
-            <p>Build a data-informed campaign blueprint tailored to your goals.</p>
-          </div>
+        <div class="process__item reveal reveal--d1">
+          <div class="process__item-num">02</div>
+          <h4>Strategise</h4>
+          <p>Build a data-informed campaign blueprint tailored precisely to your goals.</p>
         </div>
-        <div class="process__connector"></div>
-        <div class="process__step reveal reveal--delay-2">
-          <div class="process__step-num">03</div>
-          <div class="process__step-content">
-            <h4>Create</h4>
-            <p>Produce standout content and activate the right channels.</p>
-          </div>
+        <div class="process__item reveal reveal--d2">
+          <div class="process__item-num">03</div>
+          <h4>Create</h4>
+          <p>Produce standout content and activate the right channels at the right moment.</p>
         </div>
-        <div class="process__connector"></div>
-        <div class="process__step reveal reveal--delay-3">
-          <div class="process__step-num">04</div>
-          <div class="process__step-content">
-            <h4>Measure</h4>
-            <p>Track, optimise, and report on every metric that matters.</p>
-          </div>
+        <div class="process__item reveal reveal--d3">
+          <div class="process__item-num">04</div>
+          <h4>Measure</h4>
+          <p>Track, optimise, and report with full transparency on every metric that matters.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── PORTFOLIO ─────────────────────────────────────────── -->
+  <!-- ─── PORTFOLIO ────────────────────────────────────────── -->
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <div class="section-header">
-        <div class="section-tag reveal">Selected Work</div>
-        <h2 class="section-title reveal reveal--delay-1">Our Portfolio</h2>
-        <p class="section-sub reveal reveal--delay-2">
-          A snapshot of campaigns we're proud of.
-        </p>
+      <div class="portfolio__header">
+        <div>
+          <div class="eyebrow reveal">Selected Work</div>
+          <h2 class="portfolio__title reveal reveal--d1" data-split>
+            Campaigns<br>we're proud of.
+          </h2>
+        </div>
+        <div class="portfolio__filter reveal reveal--d1">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="influencer">Influencer</button>
+          <button class="filter-btn" data-filter="sooh">SOOH</button>
+          <button class="filter-btn" data-filter="content">Content</button>
+        </div>
       </div>
-      <div class="portfolio__filter reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="influencer">Influencer</button>
-        <button class="filter-btn" data-filter="sooh">SOOH</button>
-        <button class="filter-btn" data-filter="content">Content</button>
-      </div>
+
       <div class="portfolio__grid">
 
-        <div class="portfolio-item" data-cat="influencer">
-          <div class="portfolio-item__inner">
-            <div class="portfolio-item__img portfolio-item__img--1">
-              <div class="portfolio-item__overlay">
-                <span class="portfolio-item__cat">Influencer Marketing</span>
-                <h3 class="portfolio-item__title">Aura Skincare Launch</h3>
-                <p>42M impressions · 3.8% engagement rate</p>
-                <a href="#contact" class="btn btn--ghost btn--sm">View Case Study</a>
+        <article class="pf-item reveal" data-cat="influencer">
+          <div class="pf-item__img pf-item__img--1">
+            <div class="pf-item__overlay">
+              <div class="pf-item__meta">
+                <span class="pf-item__cat">Influencer Marketing</span>
+                <span class="pf-item__year">2025</span>
               </div>
+              <h3 class="pf-item__title">Aura Skincare<br>Launch</h3>
+              <p class="pf-item__stat">42M impressions · 3.8% ER</p>
+              <a href="#contact" class="pf-item__cta">
+                View Case
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5 11.5 7 8 10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="portfolio-item portfolio-item--wide" data-cat="sooh">
-          <div class="portfolio-item__inner">
-            <div class="portfolio-item__img portfolio-item__img--2">
-              <div class="portfolio-item__overlay">
-                <span class="portfolio-item__cat">Social Out of Home</span>
-                <h3 class="portfolio-item__title">Velocity Energy — Times Square</h3>
-                <p>12 screens · 8 cities · 2 weeks</p>
-                <a href="#contact" class="btn btn--ghost btn--sm">View Case Study</a>
+        <article class="pf-item pf-item--wide reveal reveal--d1" data-cat="sooh">
+          <div class="pf-item__img pf-item__img--2">
+            <div class="pf-item__overlay">
+              <div class="pf-item__meta">
+                <span class="pf-item__cat">Social Out of Home</span>
+                <span class="pf-item__year">2025</span>
               </div>
+              <h3 class="pf-item__title">Velocity Energy<br>Times Square</h3>
+              <p class="pf-item__stat">12 screens · 8 cities · 2 weeks</p>
+              <a href="#contact" class="pf-item__cta">
+                View Case
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5 11.5 7 8 10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="portfolio-item" data-cat="content">
-          <div class="portfolio-item__inner">
-            <div class="portfolio-item__img portfolio-item__img--3">
-              <div class="portfolio-item__overlay">
-                <span class="portfolio-item__cat">Content Production</span>
-                <h3 class="portfolio-item__title">Nomad — Travel Series</h3>
-                <p>12-part short film · 5M views</p>
-                <a href="#contact" class="btn btn--ghost btn--sm">View Case Study</a>
+        <article class="pf-item reveal reveal--d2" data-cat="content">
+          <div class="pf-item__img pf-item__img--3">
+            <div class="pf-item__overlay">
+              <div class="pf-item__meta">
+                <span class="pf-item__cat">Content Production</span>
+                <span class="pf-item__year">2024</span>
               </div>
+              <h3 class="pf-item__title">Nomad<br>Travel Series</h3>
+              <p class="pf-item__stat">12-part series · 5M views</p>
+              <a href="#contact" class="pf-item__cta">
+                View Case
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5 11.5 7 8 10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="portfolio-item" data-cat="influencer">
-          <div class="portfolio-item__inner">
-            <div class="portfolio-item__img portfolio-item__img--4">
-              <div class="portfolio-item__overlay">
-                <span class="portfolio-item__cat">Influencer Marketing</span>
-                <h3 class="portfolio-item__title">Revel Fashion — SS25</h3>
-                <p>120 creators · 28M reach</p>
-                <a href="#contact" class="btn btn--ghost btn--sm">View Case Study</a>
+        <article class="pf-item pf-item--tall reveal" data-cat="sooh">
+          <div class="pf-item__img pf-item__img--5">
+            <div class="pf-item__overlay">
+              <div class="pf-item__meta">
+                <span class="pf-item__cat">Social Out of Home</span>
+                <span class="pf-item__year">2024</span>
               </div>
+              <h3 class="pf-item__title">Pulse Fitness<br>City Takeover</h3>
+              <p class="pf-item__stat">40 locations · £2.1M earned media</p>
+              <a href="#contact" class="pf-item__cta">
+                View Case
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5 11.5 7 8 10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="portfolio-item portfolio-item--tall" data-cat="sooh">
-          <div class="portfolio-item__inner">
-            <div class="portfolio-item__img portfolio-item__img--5">
-              <div class="portfolio-item__overlay">
-                <span class="portfolio-item__cat">Social Out of Home</span>
-                <h3 class="portfolio-item__title">Pulse Fitness — City Takeover</h3>
-                <p>40 locations · £2.1M earned media</p>
-                <a href="#contact" class="btn btn--ghost btn--sm">View Case Study</a>
+        <article class="pf-item reveal reveal--d1" data-cat="influencer">
+          <div class="pf-item__img pf-item__img--4">
+            <div class="pf-item__overlay">
+              <div class="pf-item__meta">
+                <span class="pf-item__cat">Influencer Marketing</span>
+                <span class="pf-item__year">2024</span>
               </div>
+              <h3 class="pf-item__title">Revel Fashion<br>SS25</h3>
+              <p class="pf-item__stat">120 creators · 28M reach</p>
+              <a href="#contact" class="pf-item__cta">
+                View Case
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5 11.5 7 8 10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="portfolio-item" data-cat="content">
-          <div class="portfolio-item__inner">
-            <div class="portfolio-item__img portfolio-item__img--6">
-              <div class="portfolio-item__overlay">
-                <span class="portfolio-item__cat">Content Production</span>
-                <h3 class="portfolio-item__title">Kova Spirits — Brand Film</h3>
-                <p>Cannes shortlist · 2.3M views</p>
-                <a href="#contact" class="btn btn--ghost btn--sm">View Case Study</a>
+        <article class="pf-item reveal reveal--d2" data-cat="content">
+          <div class="pf-item__img pf-item__img--6">
+            <div class="pf-item__overlay">
+              <div class="pf-item__meta">
+                <span class="pf-item__cat">Content Production</span>
+                <span class="pf-item__year">2024</span>
               </div>
+              <h3 class="pf-item__title">Kova Spirits<br>Brand Film</h3>
+              <p class="pf-item__stat">Cannes shortlist · 2.3M views</p>
+              <a href="#contact" class="pf-item__cta">
+                View Case
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7h9M8 3.5 11.5 7 8 10.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
             </div>
           </div>
-        </div>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ─── TESTIMONIALS ──────────────────────────────────────── -->
+  <!-- ─── TESTIMONIALS ─────────────────────────────────────── -->
   <section class="testimonials">
     <div class="container">
-      <div class="section-tag reveal" style="text-align:center">What Clients Say</div>
-      <div class="testimonials__slider reveal reveal--delay-1">
-        <div class="testimonial active">
-          <blockquote>
-            "Thinkway didn't just run a campaign — they built a cultural moment. The influencer
-            strategy tripled our expected reach and the creative direction was flawless."
-          </blockquote>
-          <cite>
-            <strong>Sarah Okonkwo</strong>
-            <span>CMO, Aura Skincare</span>
-          </cite>
+      <div class="testi__inner">
+        <div class="testi__left">
+          <div class="eyebrow reveal">Client Voices</div>
+          <div class="testi__slider">
+            <div class="testi active">
+              <blockquote class="testi__quote" data-split>
+                "Thinkway didn't just run a campaign — they built a cultural moment."
+              </blockquote>
+              <cite class="testi__cite">
+                <strong>Sarah Okonkwo</strong>
+                <span>CMO, Aura Skincare</span>
+              </cite>
+            </div>
+            <div class="testi">
+              <blockquote class="testi__quote" data-split>
+                "The SOOH campaign put our brand in front of millions overnight."
+              </blockquote>
+              <cite class="testi__cite">
+                <strong>James Hartley</strong>
+                <span>Head of Marketing, Velocity Energy</span>
+              </cite>
+            </div>
+            <div class="testi">
+              <blockquote class="testi__quote" data-split>
+                "Our brand film won a Cannes shortlist. The creative vision is second to none."
+              </blockquote>
+              <cite class="testi__cite">
+                <strong>Elena Morozova</strong>
+                <span>Brand Director, Kova Spirits</span>
+              </cite>
+            </div>
+          </div>
+          <div class="testi__nav">
+            <button class="testi__dot active" data-idx="0" aria-label="Testimonial 1"></button>
+            <button class="testi__dot" data-idx="1" aria-label="Testimonial 2"></button>
+            <button class="testi__dot" data-idx="2" aria-label="Testimonial 3"></button>
+          </div>
         </div>
-        <div class="testimonial">
-          <blockquote>
-            "The SOOH campaign put our brand in front of millions overnight. Thinkway's
-            location strategy and execution were exceptional — real pros."
-          </blockquote>
-          <cite>
-            <strong>James Hartley</strong>
-            <span>Head of Marketing, Velocity Energy</span>
-          </cite>
+        <div class="testi__right reveal">
+          <div class="testi__mark">"</div>
+          <div class="testi__brands">
+            <p class="testi__brands-label">Trusted by</p>
+            <div class="testi__brand-logos">
+              <span>Aura</span><span>Velocity</span>
+              <span>Nomad</span><span>Revel</span>
+              <span>Pulse</span><span>Kova</span>
+            </div>
+          </div>
         </div>
-        <div class="testimonial">
-          <blockquote>
-            "Our brand film won us a Cannes shortlist and 2M+ organic views. The team's
-            creative vision and production quality are second to none."
-          </blockquote>
-          <cite>
-            <strong>Elena Morozova</strong>
-            <span>Brand Director, Kova Spirits</span>
-          </cite>
-        </div>
-      </div>
-      <div class="testimonials__dots reveal">
-        <button class="dot-btn active" data-idx="0"></button>
-        <button class="dot-btn" data-idx="1"></button>
-        <button class="dot-btn" data-idx="2"></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── CLIENTS ───────────────────────────────────────────── -->
-  <section class="clients">
-    <div class="container">
-      <p class="clients__label reveal">Trusted by forward-thinking brands</p>
-      <div class="clients__logos reveal reveal--delay-1">
-        <div class="client-logo">Aura</div>
-        <div class="client-logo">Velocity</div>
-        <div class="client-logo">Nomad</div>
-        <div class="client-logo">Revel</div>
-        <div class="client-logo">Pulse</div>
-        <div class="client-logo">Kova</div>
       </div>
     </div>
   </section>
 
-  <!-- ─── CONTACT ───────────────────────────────────────────── -->
+  <!-- ─── CTA BANNER ───────────────────────────────────────── -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <h2 class="cta-banner__headline reveal" data-split>
+        Ready to make<br>your <em>mark?</em>
+      </h2>
+      <a href="#contact" class="btn-primary magnetic reveal reveal--d2"><span>Start a Project</span></a>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ──────────────────────────────────────────── -->
   <section class="contact" id="contact">
     <div class="container contact__inner">
       <div class="contact__left">
-        <div class="section-tag reveal">Get In Touch</div>
-        <h2 class="section-title reveal reveal--delay-1">
-          Ready to make<br />your mark?
+        <div class="eyebrow reveal">Get In Touch</div>
+        <h2 class="contact__title reveal reveal--d1" data-split>
+          Let's talk<br>about your brand.
         </h2>
-        <p class="contact__sub reveal reveal--delay-2">
-          Tell us about your brand and we'll show you how Thinkway can
-          take it further. No pitch decks — just a conversation.
-        </p>
-        <div class="contact__info reveal reveal--delay-2">
-          <a href="mailto:hello@thinkway.agency" class="contact__link">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l8 5 8-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="contact__details reveal reveal--d2">
+          <a href="mailto:hello@thinkway.agency" class="contact__detail">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M2 7l7 4.5L16 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
             hello@thinkway.agency
           </a>
-          <a href="tel:+442071234567" class="contact__link">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 2h3l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L13.5 10l4 1.5V15c0 1.7-1.3 3-3 3C6 18 2 12 2 5c0-1.7 1.3-3 3-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <a href="tel:+442071234567" class="contact__detail">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4.5 2h2.7l1.35 3.6-1.8 1.35c.9 1.8 2.25 3.15 4.05 4.05l1.35-1.8L15.3 10.5V13.5a1.5 1.5 0 0 1-1.5 1.5C5.85 15 2 9.15 2 4a1.5 1.5 0 0 1 1.5-1.5H4.5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
             +44 207 123 4567
           </a>
-          <span class="contact__link">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 0 1 6 6c0 4-6 10-6 10S4 12 4 8a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="8" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span class="contact__detail">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 2a5 5 0 0 1 5 5c0 3.5-5 9-5 9S4 10.5 4 7a5 5 0 0 1 5-5z" stroke="currentColor" stroke-width="1.4"/><circle cx="9" cy="7" r="1.75" stroke="currentColor" stroke-width="1.4"/></svg>
             London, United Kingdom
           </span>
         </div>
       </div>
-      <div class="contact__right reveal reveal--delay-2">
+      <div class="contact__right reveal reveal--d1">
         <form class="contact-form" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Your Name</label>
+              <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Jane Smith" required />
             </div>
             <div class="form-group">
-              <label for="email">Email Address</label>
+              <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="jane@brand.com" required />
             </div>
           </div>
@@ -475,83 +533,89 @@
           </div>
           <div class="form-group">
             <label>Service Interest</label>
-            <div class="form-tags">
-              <label class="tag-checkbox">
+            <div class="form-chips">
+              <label class="chip">
                 <input type="checkbox" name="service" value="influencer" />
                 <span>Influencer Marketing</span>
               </label>
-              <label class="tag-checkbox">
+              <label class="chip">
                 <input type="checkbox" name="service" value="sooh" />
                 <span>Social OOH</span>
               </label>
-              <label class="tag-checkbox">
+              <label class="chip">
                 <input type="checkbox" name="service" value="content" />
                 <span>Content Production</span>
               </label>
             </div>
           </div>
           <div class="form-group">
-            <label for="message">Tell Us About Your Project</label>
-            <textarea id="message" name="message" rows="4" placeholder="What are you looking to achieve?" required></textarea>
+            <label for="message">Project Brief</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us what you're trying to achieve…" required></textarea>
           </div>
-          <button type="submit" class="btn btn--primary btn--full">
+          <button type="submit" class="btn-primary btn-primary--full magnetic">
             <span>Send Message</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
-          <p class="form-success" id="formSuccess">Thanks! We'll be in touch within 24 hours.</p>
+          <p class="form-success" id="formSuccess">Message received — we'll be in touch within 24 hours.</p>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <!-- ─── FOOTER ───────────────────────────────────────────── -->
   <footer class="footer">
-    <div class="container footer__inner">
+    <div class="container footer__top">
       <div class="footer__brand">
-        <a href="#hero" class="nav__logo">Thinkway</a>
+        <a href="#hero" class="footer__logo">Thinkway</a>
         <p>Influence. Presence. Impact.</p>
       </div>
-      <div class="footer__nav">
-        <h5>Navigate</h5>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Work</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="footer__services">
-        <h5>Services</h5>
-        <a href="#services">Influencer Marketing</a>
-        <a href="#services">Social Out of Home</a>
-        <a href="#services">Content Production</a>
-      </div>
-      <div class="footer__social">
-        <h5>Follow Us</h5>
-        <div class="footer__social-links">
-          <a href="#" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="14.5" cy="5.5" r="0.75" fill="currentColor"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M6 8.5v5M6 6v.5M10 13.5v-3c0-1 .5-1.5 1.5-1.5s1.5.5 1.5 1.5v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </a>
-          <a href="#" aria-label="TikTok">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M13 3c.5 2 2 3 4 3v3c-1.5 0-3-.5-4-1.5V14a5 5 0 1 1-5-5v3a2 2 0 1 0 2 2V3h3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </a>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h5>Navigate</h5>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <a href="#services">Influencer Marketing</a>
+          <a href="#services">Social Out of Home</a>
+          <a href="#services">Content Production</a>
+        </div>
+        <div class="footer__col">
+          <h5>Connect</h5>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="3.5" stroke="currentColor" stroke-width="1.4"/><circle cx="9" cy="9" r="2.5" stroke="currentColor" stroke-width="1.4"/><circle cx="13" cy="5" r=".75" fill="currentColor"/></svg>
+              Instagram
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="14" height="14" rx="3" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 7.5v5M5.5 5.5v.5M9 12.5v-3c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+              LinkedIn
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M11.5 2c.5 2 1.8 2.8 3.5 3v2.5c-1.3 0-2.5-.4-3.5-1.2V12a4.5 4.5 0 1 1-4.5-4.5v2.5a2 2 0 1 0 2 2V2h2.5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+              TikTok
+            </a>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="container">
+      <div class="container footer__bottom-inner">
         <p>© 2026 Thinkway Agency. All rights reserved.</p>
         <div>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
+  <!-- custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
   <script src="script.js"></script>
 </body>
